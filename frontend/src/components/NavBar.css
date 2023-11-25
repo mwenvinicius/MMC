@@ -1,0 +1,36 @@
+
+.iconOne {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.iconTwo {
+    font-size: 24px;
+    color: var(--that-red-color);
+}
+
+.iconThree {
+    padding-left: 15px;
+    font-size: 24px;
+    color: var(--that-blue-color);
+}
+
+.buttonOne {
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    background: #D8D8D8;
+    border-radius: 5px;
+    color: #000;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border:none!important;
+}
+
+.buttonOne:hover {
+    background: var(--that-blue-color);
+    color: #D8D8D8;
+    cursor: pointer;
+    transition: 0.3s;
+}

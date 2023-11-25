@@ -1,0 +1,40 @@
+.containerGridBrands {
+    background-color: white;
+    margin: 0px 135px 90px 135px ;
+}
+
+.containerGridBrands h3 {
+    font-size: 21px;
+    font-family: 'Rubik', sans-serif;
+    margin: 0px 0px 60px 0px;
+}
+
+.gridBrand {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 30px;
+    margin-left: 135px;
+    margin-right: 135px;
+    grid-template-rows: auto;
+    padding: 0px;
+}
+
+.brandContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #C9C2C2;
+    width: 220px;
+    height: 95px;
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+}
+
+.brandContainer img{
+    width: 65%;
+}

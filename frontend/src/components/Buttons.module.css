@@ -1,0 +1,35 @@
+.buttonThree {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background: #DC2727;
+    border:none!important;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.buttonThree:hover {
+    cursor: pointer;
+    background: #86090F;
+}
+
+.buttonFour {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background: var(--Laranja, #F24405);
+    border:none!important;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.buttonFour:hover {
+    cursor: pointer;
+    background: #b93403;
+}

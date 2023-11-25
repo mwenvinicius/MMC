@@ -1,0 +1,55 @@
+.Background {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    height: 180px;
+    background-color: #DA3031;
+    padding: 60px 0 60px 0;
+    margin-bottom: 90px;
+}
+
+.cardTopCategory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 170px;    
+}
+
+.SectionTitle {
+    padding: 0px;
+    margin: 90px 0 30px 135px;
+    font-family: 'Rubik';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cardTopCategory h3{
+    color: white;
+    margin: 30px 0 0 0;
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.Imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    width: 120px;
+    height: 120px;
+    background: white;
+}
+
+.cardTopCategory img{
+    border: 100px;
+    background: white;
+    width: 70px;
+    height: 70px;
+}

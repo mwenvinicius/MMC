@@ -1,0 +1,19 @@
+.p_slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+    margin-top: 0px;
+    margin-left: 135px;
+    margin-right: 135px;
+    margin-bottom: 90px;
+}
+
+.p_slider_Title {
+    font-size: 21px;
+    font-family: 'Rubik';
+    margin: 0px;
+   /*  margin-left: 85px; */
+    margin-bottom: 60px;
+
+}

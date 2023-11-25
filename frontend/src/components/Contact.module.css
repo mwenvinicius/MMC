@@ -1,0 +1,135 @@
+.contactContainer {
+    width: 100;
+}
+
+.contactContainerTitle {
+    font-size: 21px;
+    font-family: 'Rubik', sans-serif;
+    margin: 0px 0px 60px 135px;
+}
+
+.background {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./Images/BG-Image.png");
+    width: 100%;
+    height: 470px;
+    margin-bottom: 120px;
+}
+
+.formBG {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 340px;
+    border-radius: 10px;
+    background: rgba(10,25,38,0.60);
+    backdrop-filter: blur(12px);
+}
+
+.formBGTitle {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 21px;
+    align-self: center;
+    margin: 30px 0px 30px 0px ;   
+}
+
+.formBGInput {
+    width: 270px;
+    height: 30px;
+    color: var(--Azul-2, #0A1926);
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 0px 0px 15px 30px;
+}
+
+.Bnt {
+    margin: 0px 0px 0px 30px;
+}
+
+.formBGInputText:focus, .formBGInput:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.formBGInputText {
+    width: 270px;
+    height: 90px;
+    color: var(--Azul-2, #0A1926);
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 0px 0px 15px 30px;
+}
+
+.whatsAppPart {
+    width: 430px;
+    height: 105px;
+    border-radius: 10px;
+    background: rgba(10, 25, 38, 0.60);
+    backdrop-filter: blur(12px);
+    padding: 15px;
+}
+
+.division {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.division h1 {
+    color: #4B1D2F;
+    font-family: 'Rubik';
+    font-size: 42px;
+}
+
+.line { 
+    width: 136px;
+    height: 5px;
+    transform: rotate(90deg);
+    background: rgba(75, 29, 47, 0.60);
+    margin: 10px;
+}
+
+.messagem {
+    color: var(--Branco, #FFF);
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0px 0px 15px 0px;
+}
+
+.zapZap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.zapZap i {
+    padding: 0;
+    width: 23px;
+    font-size: 23px;
+    color: white;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.zapZap h2 {
+    color: var(--Branco,white);
+    font-size: 21px;
+    margin: 0px;
+}
