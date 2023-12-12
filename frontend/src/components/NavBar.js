@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './NavBar.module.css';
 import './NavBar.css';
 import NavBarSec from './NavBarSec';
+import {LinkContainer} from 'react-router-bootstrap';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
@@ -18,7 +20,10 @@ function NavBar() {
                 </div>
             </div>
             <div>
-                <h1 className={styles.titleNavBar}>MM CONSTRUÇÕES</h1>
+                <Link to='/'>
+                    <h1 className={styles.titleNavBar}>MM CONSTRUÇÕES</h1>
+                </Link>
+                
             </div>
             <div className={styles.thirdPart}>
                 <div className={styles.mainIcons}>

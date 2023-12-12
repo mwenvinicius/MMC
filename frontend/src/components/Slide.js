@@ -1,11 +1,38 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './Slide.module.css';
 import './Slide.css';
-import './SlidePass';
+import { useLocation } from 'react-router-dom';
+/* import './SlidePass'; */
 
 function Slide() {
+  const location = useLocation();
+  useEffect(() => {
+    console.log(location)
+    if (location.pathname === '/home') {
+      const elemento = document.getElementById('fir');
+      let count = 1;
+      const slide = document.getElementById("radio1");
+      if (slide) {
+          slide.checked = true;
+      }
+      setInterval(function(){
+        nextImage();}
+      ,5000)
+      function nextImage(){
+          count++;
+          if(count>5){
+              count = 1;
+          }
+          document.getElementById("radio"+count).checked = true;
+      }
+    }
+    return () => {
+      console.log('Script desmontado ou mudança de página');
+    }
+  },[]);
+
   return (
-    <div class="slider">
+    <div class="slider" id='fir'>
       {/* Slides da Aplicação. */}
         <div class="slides">
           {/* Botões de Rádio. */}

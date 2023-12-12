@@ -2,21 +2,28 @@ import React from 'react';
 import styles from './Product.module.css';
 import Rating from './Rating';
 import stylesBnt from './Buttons.module.css';
+import { Link } from 'react-router-dom';
 
-function Product({product}){
+function Product({informations}){
   return (
+
     <div className={styles.cardProduct}>
-        <img src='/Products/Product-Spray.png'></img>
-        <h3>Spray Uso Geral Vermelho 400ml ChemiColor Lorem Ipsum</h3>
-        <div className={styles.price}>
-            <span>R$ 20,00</span>
-        </div>
-        <Rating value={4.9} text={`(${47})`} color={'#DAA520'}/>
-        <div className={styles.partInfer}>
-            <button className={stylesBnt.buttonThree}>Comprar</button>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
+        <Link to={`/product/${informations._id}`}>
+          <img src={informations.imagem}></img>
+          <h3>{informations.nome}</h3>
+          <div className={styles.price}>
+              <span>R$ {informations.preco.toString().replace('.', ',')}</span>
+          </div>
+          <Rating value={informations.numAvalia} text={`(${informations.avaliacoes})`} color={'#DAA520'}/>
+          <div className={styles.partInfer}>
+              <button className={stylesBnt.buttonThree}>Comprar</button>
+              <i class="fa-solid fa-heart"></i>
+              <a href={`/product/${7}`}>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+              
+          </div>
+        </Link>
     </div>
   )
 }

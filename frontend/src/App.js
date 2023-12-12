@@ -1,27 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
-import Slide from './components/Slide';
-import MainCategories from './components/MainCategories';
-import Product from './components/Product';
-import ProductsFirst from './components/ProductsFirst';
-import Brands from './components/Brands';
-import Promotions from './components/Promotions';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
+import HomeScreen from './screens/HomeScreen';
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import ProductScreen from './screens/ProductScreen';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-      <Slide/>
-      <MainCategories/>
-      <ProductsFirst/>
-      <Brands/>
-      <Promotions/>
-      <Contact/>
-      <Footer/>
-    </div>
+    <Router>
+      <div className="App">
+        <NavBar/>
+        <Routes>
+          <Route path='/home' element={<HomeScreen/>}/>
+          <Route path='product/:id' element={<ProductScreen/>}/>
+        </Routes>
+        <Footer/>
+      </div>
+    </Router>
   );
 }
 
