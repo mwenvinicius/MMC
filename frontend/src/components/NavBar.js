@@ -20,7 +20,7 @@ function NavBar() {
                 </div>
             </div>
             <div>
-                <Link to='/'>
+                <Link to='/home'>
                     <h1 className={styles.titleNavBar}>MM CONSTRUÇÕES</h1>
                 </Link>
                 

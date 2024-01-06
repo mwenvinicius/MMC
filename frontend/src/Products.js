@@ -14,7 +14,7 @@ const Products = [
             'Marca': 'ChemiColor'
         },
         'tipoMed': 'Unidade',
-        'descricao': '',
+        'descricao': 'A Tinta spray alta temperatura chemicolor edition é elaborada com componentes de alta qualidade, indicada e aprovada para uso em superfícies metálicas com alta temperatura, de até 600ºc. Respeitando o tratamento da superfície antes da aplicação, pode ser utilizada em escapamento de motocicletas e carros, forno elétrico, churrasqueira portátil, etc.',
         'avaliacoes': 28,
         'qntEstoque': 12,
         'preco': 19.99,

@@ -13,7 +13,7 @@ function Contact() {
                     <input type="text" placeholder='Nome Completo' className={Styles.formBGInput}></input>
                     <input type="email" placeholder='Email' className={Styles.formBGInput}></input>
                     <input type="text" placeholder='Mensagem' className={Styles.formBGInputText}></input>
-                    <button className={[StylesBNT.buttonFour, Styles.Bnt].join(' ')}>Enviar</button>
+                    <button className={[StylesBNT.buttonThree, Styles.Bnt].join(' ')}>Enviar</button>
                 </div>
                 <div className={Styles.division}>
                   <div className={Styles.line}></div>

@@ -6,13 +6,12 @@ import { Link } from 'react-router-dom';
 
 function Product({informations}){
   return (
-
     <div className={styles.cardProduct}>
         <Link to={`/product/${informations._id}`}>
           <img src={informations.imagem}></img>
           <h3>{informations.nome}</h3>
           <div className={styles.price}>
-              <span>R$ {informations.preco.toString().replace('.', ',')}</span>
+              <span>R$ {informations.preco}</span>
           </div>
           <Rating value={informations.numAvalia} text={`(${informations.avaliacoes})`} color={'#DAA520'}/>
           <div className={styles.partInfer}>

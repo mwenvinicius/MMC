@@ -11,13 +11,23 @@
     transition: .5s ease;
 }
 
+.buttonThree:disabled{
+    background: #888686;
+
+}
+.buttonThree:disabled:hover{
+    cursor: not-allowed;
+    background: #616060;
+}
+
+
 .buttonThree:hover {
     cursor: pointer;
     background: #86090F;
 }
 
 .buttonFour {
-    width: 100px;
+    width: auto;
     height: 40px;
     border-radius: 5px;
     background: var(--Laranja, #F24405);

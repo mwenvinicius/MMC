@@ -6,35 +6,22 @@ import axios from 'axios';
 import Products from '../Products';
 
 function ProductsFirst(){
-  const [products, setProducts] = useState([])
-  useEffect(() => { 
-  
-      try{  
-      new Glider(document.querySelector('.glider'), {
-        slidesToScroll: 4,
-        slidesToShow: 4,
-        draggable: true,
-        dots: '.dots',
-        arrows: {
-          prev: '.glider-prev',
-          next: '.glider-next'
-        }
-      });
-      /* fetchProducts(); */
+  useEffect(() => {
+      try { 
+        new Glider(document.querySelector('.glider'), {
+          slidesToScroll: 4,
+          slidesToShow: 4,
+          draggable: true,
+          dots: '.dots',
+          arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+          }
+        });  
       }
       catch(err){
         console.log('Erro!')
-      }
-      /* async function fetchProducts(){
-        try{
-          const {data} = await axios.get('http://127.0.0.1:8000/api/products/');
-          setProducts(data);
-        }
-        catch(err){
-          console.log('Erro!')
-        }
-      } */
-      
+      } 
   }, []);
   return (
     <div className={Styles.p_slider}>

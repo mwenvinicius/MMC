@@ -16,7 +16,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+main {
+  padding-top: 60px;
+  padding-left: 135px;
+  padding-right: 135px;
+  padding-bottom: 90px;
+  min-height: 80vh;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  font-size: 1.8rem;
 }
